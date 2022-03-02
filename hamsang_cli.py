@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from sys import argv
 from core.dbmanager import get_meaning
 from pprint import pprint
