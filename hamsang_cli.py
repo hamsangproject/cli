@@ -22,6 +22,8 @@ def stylize_dict(dictext):
 word = argv[1]
 definition = get_meaning(word, database='*', json_out=False)
 outtext = stylize_dict(definition)
-outtext = outtext.replace('‌', '-')
+# سمبل‌کاری برای پایانه‌هایی که از نیم‌فاصله پشتیبانی نمی‌کنند.
+# راهکار درست: مشکل پایانه را برطرف کنید و خط زیر را بردارید
+# outtext = outtext.replace('‌', '-')
 print(outtext)
 
